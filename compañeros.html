@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bootstrap</title>
+    <link rel="stylesheet" href="assets/scss/proyecto.css">
+</head>
+<body>
+
+<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#ventanaEmergente" data-titulo="Saludando a Lisbet" data-contenido="¡Hola Lis!">
+  Botón compañero 1
+</button>
+
+<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ventanaEmergente" data-titulo="Saludando a Josefa" data-contenido="¡Hola Jo!">
+  Botón compañero 2
+</button>
+
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ventanaEmergente" data-titulo="Saludando a Bastian" data-contenido="¡Hola Bastián!">
+  Botón compañero 3
+</button>
+
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ventanaEmergente" data-titulo="Saludando a Kevin" data-contenido="¡Hola Kevin!">
+  Botón compañero 4
+</button>
+
+
+
+<!-- Modal -->
+<!--Atributos aria definen que partes se pueden navegar con tecnologias asistivas-->
+<!--aria-labelledy es para decir el nombre del titulo del modal-->
+<!-- aria-hidden es para cerrar el modal con el teclado-->
+<!-- data-bs-dismiss indica qué contenido se va a cerrar-->
+<div class="modal fade" id="ventanaEmergente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="tituloModal">Ejemplo de modal</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" >
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Boton que hace nada</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"> </script>
+<script src="assets/js/script-2.js"></script>  
+</body>
+</html>
